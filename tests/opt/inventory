@@ -3,3 +3,4 @@ localhost ansible_connection=local
 [all:vars]
 host_key_checking = False
 ansible_ssh_user = core
+ansible_python_interpreter="PATH=/opt/bin:$PATH python"

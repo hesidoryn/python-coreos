@@ -1,16 +1,18 @@
 #!/bin/bash
 VERSIONS=${VERSIONS:-"2.7.8.10"}
 
-cd /usr
+# make directory
+sudo mkdir -p /opt/bin
+cd /opt
 
 sudo wget http://downloads.activestate.com/ActivePython/releases/${VERSIONS}/ActivePython-${VERSIONS}-linux-x86_64.tar.gz
 sudo tar -xzvf ActivePython-${VERSIONS}-linux-x86_64.tar.gz
 
-sudo mv ActivePython-${VERSIONS}-linux-x86_64 apy && cd apy && sudo ./install.sh -I /usr/python/
+sudo mv ActivePython-${VERSIONS}-linux-x86_64 apy && cd apy && sudo ./install.sh -I /opt/python/
 
-sudo ln -s /usr/python/bin/easy_install /usr/bin/easy_install
-sudo ln -s /usr/python/bin/pip /usr/bin/pip
-sudo ln -s /usr/python/bin/python /usr/bin/python
-sudo ln -s /usr/python/bin/virtualenv /usr/bin/virtualenv
+sudo ln -s /opt/python/bin/easy_install /opt/bin/easy_install
+sudo ln -s /opt/python/bin/pip /opt/bin/pip
+sudo ln -s /opt/python/bin/python /opt/bin/python
+sudo ln -s /opt/python/bin/virtualenv /opt/bin/virtualenv
 
-/usr/bin/pip install docker-py==1.8.1
+sudo /opt/bin/pip install docker-py=1.8.1
