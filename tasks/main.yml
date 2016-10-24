@@ -2,4 +2,4 @@
 # tasks file for python-coreos
 
 - name: Install python and packages
-  script: bootstrap.sh creates=/etc/ansible/facts.d/bootstrap.fact
+  script: bootstrap.sh creates=/opt/bin/python
