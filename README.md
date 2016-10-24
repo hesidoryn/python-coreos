@@ -1,7 +1,7 @@
 python-coreos
 =========
 
-This role installes python and some packages for using Ansible
+This role installs python and some packages for using Ansible
 
 # Configure your project
 
