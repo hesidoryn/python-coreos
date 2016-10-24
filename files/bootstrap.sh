@@ -15,4 +15,4 @@ sudo ln -s /opt/python/bin/pip /opt/bin/pip
 sudo ln -s /opt/python/bin/python /opt/bin/python
 sudo ln -s /opt/python/bin/virtualenv /opt/bin/virtualenv
 
-sudo /opt/bin/pip install docker-py=1.8.1
+sudo /opt/bin/pip install docker-py==1.8.1
